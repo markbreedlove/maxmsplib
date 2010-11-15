@@ -21,7 +21,7 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"maxclass" : "comment",
-					"text" : "$Id: midityping.maxpat 2 2010-11-15 20:59:25Z mark $",
+					"text" : "$Id$",
 					"numoutlets" : 0,
 					"fontsize" : 12.0,
 					"patching_rect" : [ 5.0, 15.0, 211.0, 20.0 ],
