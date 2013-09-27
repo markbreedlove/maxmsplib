@@ -1,10 +1,15 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 1474.0, 545.0, 802.0, 502.0 ],
+		"appversion" : 		{
+			"major" : 6,
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
+		}
+,
+		"rect" : [ 794.0, 518.0, 802.0, 502.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 1474.0, 545.0, 802.0, 502.0 ],
-		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -12,519 +17,540 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 5.0, 5.0 ],
 		"gridsnaponopen" : 0,
+		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "$Id$",
-					"numoutlets" : 0,
-					"fontsize" : 12.0,
-					"patching_rect" : [ 5.0, 15.0, 211.0, 20.0 ],
-					"id" : "obj-15",
 					"fontname" : "Arial",
-					"numinlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "The keymap file determines how the keys are recognized.  They do not have to function as normal clavier keys (i.e. white keys, black keys).  They can follw any particular pattern.",
-					"linecount" : 8,
-					"numoutlets" : 0,
 					"fontsize" : 12.0,
-					"patching_rect" : [ 5.0, 150.0, 154.0, 117.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-12",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 5.0, 150.0, 154.0, 114.0 ],
+					"text" : "The keymap file determines how the keys are recognized.  They do not have to function as normal clavier keys (i.e. white keys, black keys).  They can follw any particular pattern."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "on/off, 1/0",
-					"numoutlets" : 0,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"patching_rect" : [ 460.0, 10.0, 68.0, 20.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-11",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 460.0, 10.0, 68.0, 20.0 ],
+					"text" : "on/off, 1/0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "When including this in a standalone, add the keymap files to the application's support directory.",
-					"linecount" : 5,
-					"numoutlets" : 0,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"patching_rect" : [ 5.0, 325.0, 150.0, 75.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-9",
-					"fontname" : "Arial",
-					"numinlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"linecount" : 5,
 					"maxclass" : "comment",
-					"text" : "TO DO: keymaps for different national keyboards.",
-					"linecount" : 3,
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"fontsize" : 12.0,
-					"patching_rect" : [ 450.0, 175.0, 125.0, 48.0 ],
-					"id" : "obj-22",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"patching_rect" : [ 5.0, 325.0, 150.0, 74.0 ],
+					"text" : "When including this in a standalone, add the keymap files to the application's support directory."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "flush",
-					"numoutlets" : 2,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-22",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 175.0, 125.0, 47.0 ],
+					"text" : "TO DO: keymaps for different national keyboards."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 290.0, 330.0, 36.0, 20.0 ],
-					"id" : "obj-20",
-					"fontname" : "Arial",
-					"numinlets" : 2
+					"text" : "flush"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "t i b",
-					"numoutlets" : 2,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"patching_rect" : [ 290.0, 155.0, 32.5, 20.0 ],
-					"id" : "obj-19",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"text" : "t i b"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "select 32",
-					"numoutlets" : 2,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 270.0, 55.0, 59.0, 20.0 ],
-					"id" : "obj-13",
-					"fontname" : "Arial",
-					"numinlets" : 2
+					"text" : "select 32"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "gswitch2",
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 580.0, 110.0, 39.0, 32.0 ],
 					"id" : "obj-10",
-					"numinlets" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"maxclass" : "gswitch2",
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 270.0, 110.0, 39.0, 32.0 ],
-					"id" : "obj-7",
-					"numinlets" : 2
+					"parameter_enable" : 0,
+					"patching_rect" : [ 580.0, 110.0, 39.0, 32.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "inlet",
+					"id" : "obj-7",
+					"maxclass" : "gswitch2",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 270.0, 110.0, 39.0, 32.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "0 = off, >0 = on",
+					"comment" : "0 = off, >0 = on",
+					"id" : "obj-1",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 430.0, 5.0, 25.0, 25.0 ],
-					"id" : "obj-1",
-					"numinlets" : 0,
-					"comment" : "0 = off, >0 = on"
+					"patching_rect" : [ 430.0, 5.0, 25.0, 25.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "loadbang",
-					"numoutlets" : 1,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 410.0, 125.0, 60.0, 20.0 ],
-					"id" : "obj-31",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"text" : "loadbang"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "coll",
-					"numoutlets" : 4,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 600.0, 275.0, 59.5, 20.0 ],
-					"id" : "obj-29",
-					"fontname" : "Arial",
-					"numinlets" : 1,
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
-
+,
+					"text" : "coll"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "message",
-					"text" : "read midityping-keymap-US.txt",
-					"numoutlets" : 1,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 410.0, 155.0, 175.0, 18.0 ],
-					"id" : "obj-28",
-					"fontname" : "Arial",
-					"numinlets" : 2
+					"text" : "read midityping-keymap-US.txt"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "append 0",
-					"numoutlets" : 1,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 600.0, 320.0, 61.0, 20.0 ],
-					"id" : "obj-25",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"text" : "append 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "pack",
-					"numoutlets" : 1,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 290.0, 360.0, 36.0, 20.0 ],
-					"id" : "obj-18",
-					"fontname" : "Arial",
-					"numinlets" : 2
+					"text" : "pack"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "loadmess 64",
-					"numoutlets" : 1,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.0, 205.0, 79.0, 20.0 ],
-					"id" : "obj-17",
-					"fontname" : "Arial",
-					"numinlets" : 1
+					"text" : "loadmess 64"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "number",
-					"numoutlets" : 2,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 310.0, 250.0, 50.0, 20.0 ],
 					"id" : "obj-16",
-					"fontname" : "Arial",
-					"numinlets" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "outlet",
-					"annotation" : "MIDI key number, velocity",
-					"numoutlets" : 0,
-					"patching_rect" : [ 395.0, 415.0, 25.0, 25.0 ],
-					"id" : "obj-6",
+					"maxclass" : "number",
 					"numinlets" : 1,
-					"comment" : "MIDI key number, velocity"
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 310.0, 250.0, 50.0, 20.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "coll",
-					"numoutlets" : 4,
+					"annotation" : "MIDI key number, velocity",
+					"comment" : "MIDI key number, velocity",
+					"id" : "obj-6",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 395.0, 415.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 245.0, 250.0, 59.5, 20.0 ],
-					"id" : "obj-5",
-					"fontname" : "Arial",
-					"numinlets" : 1,
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
-
+,
+					"text" : "coll"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "keyup",
-					"numoutlets" : 4,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
 					"patching_rect" : [ 600.0, 5.0, 59.5, 20.0 ],
-					"id" : "obj-4",
-					"fontname" : "Arial",
-					"numinlets" : 0
+					"text" : "keyup"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "newobj",
-					"text" : "key",
-					"numoutlets" : 4,
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
 					"patching_rect" : [ 270.0, 5.0, 59.5, 20.0 ],
-					"id" : "obj-3",
-					"fontname" : "Arial",
-					"numinlets" : 0
+					"text" : "key"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "comment",
-					"text" : "Listen to computer keyboard's alphabetic keys and output MIDI note number and velocity messages.",
-					"linecount" : 5,
-					"numoutlets" : 0,
-					"fontsize" : 12.0,
-					"patching_rect" : [ 5.0, 65.0, 159.0, 75.0 ],
-					"id" : "obj-2",
 					"fontname" : "Arial",
-					"numinlets" : 1
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-2",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 5.0, 65.0, 159.0, 74.0 ],
+					"text" : "Listen to computer keyboard's alphabetic keys and output MIDI note number and velocity messages."
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-13", 0 ],
-					"destination" : [ "obj-20", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 279.5, 89.0, 231.0, 89.0, 231.0, 315.0, 299.5, 315.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-20", 1 ],
-					"destination" : [ "obj-18", 1 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-20", 0 ],
-					"destination" : [ "obj-18", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-16", 0 ],
-					"destination" : [ "obj-20", 1 ],
-					"hidden" : 0,
-					"midpoints" : [ 319.5, 290.292084, 316.5, 290.292084 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-5", 0 ],
-					"destination" : [ "obj-20", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 254.5, 289.0, 299.5, 289.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-19", 1 ],
-					"destination" : [ "obj-16", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 313.0, 237.0, 319.5, 237.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-19", 0 ],
-					"destination" : [ "obj-5", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 299.5, 189.0, 254.5, 189.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-7", 1 ],
-					"destination" : [ "obj-19", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-13", 1 ],
-					"destination" : [ "obj-7", 1 ],
-					"hidden" : 0,
-					"midpoints" : [ 319.5, 82.0, 299.5, 82.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-3", 0 ],
-					"destination" : [ "obj-13", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 279.5, 42.0, 279.5, 42.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-1", 0 ],
 					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 439.5, 96.0, 589.5, 96.0 ]
+					"midpoints" : [ 439.5, 96.0, 589.5, 96.0 ],
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-1", 0 ],
 					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 439.5, 96.0, 279.5, 96.0 ]
+					"midpoints" : [ 439.5, 96.0, 279.5, 96.0 ],
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-10", 1 ],
 					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [  ]
+					"source" : [ "obj-10", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-4", 0 ],
-					"destination" : [ "obj-10", 1 ],
+					"destination" : [ "obj-20", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [  ]
+					"midpoints" : [ 279.5, 89.0, 231.0, 89.0, 231.0, 315.0, 299.5, 315.0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-17", 0 ],
+					"destination" : [ "obj-7", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 319.5, 82.0, 299.5, 82.0 ],
+					"source" : [ "obj-13", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 319.5, 290.292084, 316.5, 290.292084 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 329.5, 237.0, 319.5, 237.0 ]
+					"midpoints" : [ 329.5, 237.0, 319.5, 237.0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-31", 0 ],
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [  ]
+					"midpoints" : [ 299.5, 402.0, 404.5, 402.0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-29", 0 ],
-					"destination" : [ "obj-25", 0 ],
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [  ]
+					"midpoints" : [ 313.0, 237.0, 319.5, 237.0 ],
+					"source" : [ "obj-19", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-28", 0 ],
-					"destination" : [ "obj-29", 0 ],
-					"hidden" : 0,
-					"midpoints" : [ 419.5, 261.0, 609.5, 261.0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-28", 0 ],
 					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 419.5, 189.0, 254.5, 189.0 ]
+					"midpoints" : [ 299.5, 189.0, 254.5, 189.0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-18", 0 ],
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-18", 1 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 299.5, 402.0, 404.5, 402.0 ]
+					"source" : [ "obj-20", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-25", 0 ],
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 609.5, 402.0, 404.5, 402.0 ]
+					"source" : [ "obj-20", 0 ]
 				}
 
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 609.5, 402.0, 404.5, 402.0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 419.5, 261.0, 609.5, 261.0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 419.5, 189.0, 254.5, 189.0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 279.5, 42.0, 279.5, 42.0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 254.5, 289.0, 299.5, 289.0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 1 ]
+				}
+
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "midityping-keymap-US.txt",
+				"bootpath" : "/Volumes/Users/mark/Max_MSP/Library/maxmsplib/midityping/keymaps",
+				"patcherrelativepath" : "./keymaps/./keymaps/./keymaps/./keymaps/./keymaps/./keymaps/./keymaps/.",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ]
 	}
